@@ -25,6 +25,7 @@ jobs:
         run: |
           npm install
           $env:CI='false'
+          $env:REACT_APP_GOOGLE_MAPS_KEY='AIzaSyDHCioBrBdGbjgLl3GL62H2Frn-7aaubzI'
           npm run build
       - name: Zip Release
         uses: TheDoctor0/zip-release@0.7.1
