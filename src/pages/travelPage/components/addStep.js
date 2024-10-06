@@ -14,7 +14,7 @@ export default function AddTravel(props) {
   const [file, setFile] = useState()
 
   const { isLoaded } = useLoadScript({
-    googleMapsApiKey: process.env.REACT_APP_GOOGLE_MAPS_KEY,
+    googleMapsApiKey: "",
     libraries: libraries,
   })
 
